@@ -449,6 +449,10 @@
                    "deploy"
                    :true]}
 
+  :project/depify {:extra-deps
+                    {depify.monorepo {:git/url "https://github.com/tomasd/depify.monorepo"
+                                      :sha     "6062f9057d7369163571b35df22896341077f176"}}}
+
   ;; End of Project Deployment
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
