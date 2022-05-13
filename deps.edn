@@ -449,10 +449,6 @@
                    "deploy"
                    :true]}
 
-  :project/depify {:extra-deps
-                    {depify.monorepo {:git/url "https://github.com/tomasd/depify.monorepo"
-                                      :sha     "6062f9057d7369163571b35df22896341077f176"}}}
-
   ;; End of Project Deployment
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -1127,7 +1123,22 @@
                 {:git/url "https://github.com/dundalek/closh.git"
                  :tag     "v0.5.0"
                  :sha     "b1a7fd310b6511048fbacb8e496f574c8ccfa291"}}
-   :main-opts  ["-m" "closh.zero.frontend.rebel"]}} ;; End of alias definitions
+   :main-opts  ["-m" "closh.zero.frontend.rebel"]}
+
+  :signspice/dev
+  {:extra-deps {funcool/cuerdas {:mvn/version "2021.05.29-0"}
+                camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.2"}
+                djblue/portal {:mvn/version "0.23.0"}
+                print-foo-cljs/print-foo-cljs {:mvn/version "2.0.3"}
+                applied-science/js-interop {:mvn/version "0.3.1"}
+                vvvvalvalval/scope-capture {:mvn/version "0.3.2"}
+                com.github.jpmonettas/flow-storm-dbg {:mvn/version "2.0.38"}
+                com.github.jpmonettas/flow-storm-inst {:mvn/version "2.0.38"}
+                postmortem/postmortem {:mvn/version "0.5.0"}
+                com.hyperfiddle/rcf {:mvn/version "20220405"}
+                org.clojars.cyrik/omni-trace {:mvn/version "0.3.33"}
+                #_#_ harryvederci/nsa {:git/url "https://github.com/harryvederci/nsa"
+                                  :sha "b4446f744406d26006ce83eed2470fbc73839746"}}}} ;; End of alias definitions
 
 
  ;; Library Repositories
